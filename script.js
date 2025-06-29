@@ -26,4 +26,6 @@ form.addEventListener('submit', (e) => {
     alert('There was an error submitting your appointment. Please try again.');
     console.error(error);
   });
-})
+});
+
+
