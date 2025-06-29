@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,51 +7,25 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-
 <body>
-  <!-- Header -->
+
+  <!-- Header / Hero Section -->
   <header>
-    <div class="container">
+    <div class="overlay">
       <h1>Skox Dental Clinic</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#appointment">Appointment</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
+      <p>Your Smile, Our Priority</p>
+      <a href="#appointment" class="btn">Book Appointment</a>
     </div>
   </header>
-
-  <!-- Home / Appointment Section -->
-  <section id="home" class="section">
-    <div class="container">
-      <h2>Book Your Appointment</h2>
-      <form id="appointmentForm">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required />
-
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" required />
-
-        <label for="problem">Describe Your Problem</label>
-        <textarea id="problem" name="problem" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
 
   <!-- About Us -->
   <section id="about" class="section">
     <div class="container">
       <h2>About Us</h2>
-      <p>Skox Dental Clinic is committed to providing top-quality dental care using the latest technology and a patient-first approach.</p>
+      <div class="about-content">
+        <img src="images/about.jpg" alt="About Skox Clinic">
+        <p>At Skox Dental Clinic, we combine advanced technology with expert care to bring you the best dental services in a comfortable environment. Your smile deserves the best!</p>
+      </div>
     </div>
   </section>
 
@@ -60,13 +33,38 @@
   <section id="services" class="section">
     <div class="container">
       <h2>Our Services</h2>
-      <ul>
-        <li>Teeth Cleaning & Whitening</li>
-        <li>Braces and Aligners</li>
-        <li>Root Canal Treatment</li>
-        <li>Dental Implants</li>
-        <li>Emergency Dental Care</li>
-      </ul>
+      <div class="service-cards">
+        <div class="card">
+          <img src="images/cleaning.jpg" alt="Teeth Cleaning">
+          <h3>Teeth Cleaning & Whitening</h3>
+        </div>
+        <div class="card">
+          <img src="images/braces.jpg" alt="Braces">
+          <h3>Braces & Aligners</h3>
+        </div>
+        <div class="card">
+          <img src="images/rootcanal.jpg" alt="Root Canal">
+          <h3>Root Canal Treatment</h3>
+        </div>
+        <div class="card">
+          <img src="images/implants.jpg" alt="Implants">
+          <h3>Dental Implants</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <section id="appointment" class="section">
+    <div class="container">
+      <h2>Book Your Appointment</h2>
+      <form id="appointmentForm">
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+        <textarea id="problem" name="problem" placeholder="Describe Your Problem" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </section>
 
@@ -74,19 +72,18 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>Email: contact@skoxclinic.com</p>
-      <p>Phone: +91 98765 43210</p>
+      <p><strong>Email:</strong> contact@skoxclinic.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> 123 Dental Street, Chennai, India</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>Address: 123 Dental Street, Chennai, India</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>&copy; 2025 Skox Dental Clinic</p>
+      <p>&copy; 2025 Skox Dental Clinic. All Rights Reserved.</p>
     </div>
   </footer>
-</body>
 
+</body>
 </html>
