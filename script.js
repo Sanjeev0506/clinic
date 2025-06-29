@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
   formData.append('age', age);
   formData.append('problem', problem);
 
-  fetch('https://script.google.com/macros/s/AKfycbwIdkGWi1PgJqlA_ThC35f5h8wyBhruzDNzg2MKqYnBwU5SCQv_0cxRX5YUnNgQy-W1xg/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbwlYDkX7zeWq4YUxy4wELmFbN1IjRYUDp44IP45MnfXw5-7dxnJx45iokrL_KNQuUAfjg/exec', {
     method: 'POST',
     body: formData
   })
